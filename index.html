@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - Ryan Sawe</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1b1b;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #222;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00bfa6;
+        }
+
+        .logo {
+            color: #00bfa6;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Main Container */
+        .main-container {
+            text-align: center;
+            padding: 120px 20px 50px;
+        }
+
+        .profile-card {
+            background: #2a2a2a;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 350px;
+            margin: 0 auto;
+            transition: transform 0.3s;
+        }
+
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #00bfa6;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-card h1 {
+            margin-top: 20px;
+            font-size: 36px;
+            color: #fff;
+        }
+
+        .profile-card h2 {
+            color: #00bfa6;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .contact-info {
+            color: #bbb;
+            font-size: 16px;
+            line-height: 1.8;
+            margin: 20px 0;
+        }
+
+        .skills-section {
+            color: #00bfa6;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-top: 10px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            color: #00bfa6;
+        }
+
+        /* About Me Section */
+        .about-section {
+            padding: 50px 20px;
+            background-color: #2a2a2a;
+            text-align: center;
+            border-radius: 15px;
+            max-width: 800px;
+            margin: 30px auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        }
+
+        .about-section h2 {
+            font-size: 32px;
+            color: #00bfa6;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            color: #ccc;
+            font-size: 18px;
+            max-width: 80%;
+            margin: 0 auto 20px auto;
+            line-height: 1.6;
+        }
+    </style>
+
+    <!-- Updated Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Ryan Sawe</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <section class="main-container" id="home">
+        <div class="profile-card">
+            <img src="profile.jpg" alt="Ryan Sawe's Profile Picture">
+            <h1>Ryan Sawe</h1>
+            <h2>Data and Information Scientist</h2>
+            <div class="contact-info">
+                <p><i class="fa fa-envelope"></i> ryanksawe98@gmail.com</p>
+                <p><i class="fa fa-phone"></i> +254 727 241 392</p>
+                <p><i class="fa fa-map-marker"></i> Nairobi, Kenya</p>
+            </div>
+            <div class="skills-section">
+                <p><b><i>Skills:</i></b> Python, Data Science, Machine Learning, SQL, React, HTML & CSS</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/de.frasco" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.twitter.com/SaweRyan" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/Ryan-Sawe" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Ryan98-sawe" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Ryan Sawe, an Information Scientist who transforms complex data into strategic insights. I leverage data science and machine learning to solve real-world problems and drive impactful decisions, based in Nairobi, Kenya.</p>
+    </section>
+</body>
+</html>
